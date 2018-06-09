@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{632AB855-A17A-4786-8632-A12EC5123524}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SagaBNS.Handler</RootNamespace>
+    <AssemblyName>SagaBNS.Handler</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthPackets\KeyDataPacket.cs" />
+    <Compile Include="AuthPackets\GetMyUserInfoPacket.cs" />
+    <Compile Include="AuthPackets\LoginFinishPacket.cs" />
+    <Compile Include="AuthPackets\LoginStartPacket.cs" />
+    <Compile Include="AuthPackets\LogoutMyClientPacket.cs" />
+    <Compile Include="AuthPackets\RequestGameTokenPacket.cs" />
+    <Compile Include="AuthPackets\RequestTokenPacket.cs" />
+    <Compile Include="GameAccountPackets\ListMyAccountsPacket.cs" />
+    <Compile Include="STSPackets\STSConnectPacket.cs" />
+    <Compile Include="STSPackets\STSPingPacket.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SagaBNS.Core\SagaBNS.Core.csproj">
+      <Project>{01328F5C-1D8F-44CB-9902-F241A79F3F19}</Project>
+      <Name>SagaBNS.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SagaBNS.DAO.Interface\SagaBNS.DAO.Interface.csproj">
+      <Project>{2A9608EF-B78C-407F-A8E4-A14C0BA00255}</Project>
+      <Name>SagaBNS.DAO.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SagaBNS.DAO\SagaBNS.DAO.csproj">
+      <Project>{75788821-A2EA-4294-B64F-78A51B54F146}</Project>
+      <Name>SagaBNS.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SagaBNS.DTO\SagaBNS.DTO.csproj">
+      <Project>{B6F2E58C-1D81-4B46-9512-B152A590C0B0}</Project>
+      <Name>SagaBNS.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SagaBNS.Enums\SagaBNS.Enums.csproj">
+      <Project>{E3F87DE5-5B54-437F-A3ED-E8FE9902C546}</Project>
+      <Name>SagaBNS.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SagaBNS.GameObject\SagaBNS.GameObject.csproj">
+      <Project>{2346a7f0-7fc3-48f0-a3a1-5c55db49d79b}</Project>
+      <Name>SagaBNS.GameObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SagaBNS.Master.Library\SagaBNS.Master.Library.csproj">
+      <Project>{FFB00237-7F44-43B0-9752-F2CF25675A0A}</Project>
+      <Name>SagaBNS.Master.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SagaBNS.Networking\SagaBNS.Networking.csproj">
+      <Project>{68E1913C-902C-44F6-B437-BFABDE4F7D94}</Project>
+      <Name>SagaBNS.Networking</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

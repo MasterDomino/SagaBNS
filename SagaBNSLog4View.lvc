@@ -1,0 +1,2968 @@
+﻿<Config xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:b="http://schemas.datacontract.org/2004/07/System.Drawing" xmlns:d="http://schemas.datacontract.org/2004/07/Prosa.Log4View.Db" xmlns:f="http://schemas.datacontract.org/2004/07/Prosa.Log4View.Receiver.File" xmlns:l="http://schemas.datacontract.org/2004/07/Prosa.Log4View.Level" xmlns:m="http://schemas.datacontract.org/2004/07/Prosa.Log4View.Receiver.Msg" xmlns:n="http://schemas.datacontract.org/2004/07/Prosa.Log4View.Receiver.Net" xmlns:t="http://schemas.datacontract.org/2004/07/Prosa.Log4View.LoggerTree" xmlns:u="http://schemas.datacontract.org/2004/07/Prosa.Log4View.Utils" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/Prosa.Log4View.Configuration">
+  <Id>
+    <u:Value>1</u:Value>
+  </Id>
+  <Data z:Id="2">
+    <Id>
+      <u:Value>2</u:Value>
+    </Id>
+    <DefaultLog4NetPattern z:Id="3">%d [%t] %p %logger [%x] - %m</DefaultLog4NetPattern>
+    <DefaultNlogPattern z:Ref="3" i:nil="true" />
+    <Version>24</Version>
+    <_receivers z:Id="4" z:Size="1">
+      <ReceiverConfig z:Id="5" i:type="f:FileReceiverConfig">
+        <Id>
+          <u:Value>489</u:Value>
+        </Id>
+        <BackColorString z:Id="6">#FFEBF5FF</BackColorString>
+        <BufferSize>500000</BufferSize>
+        <Encoding z:Id="7">windows-1250</Encoding>
+        <LevelFilter z:Id="8" i:type="LogLevelSurrogated">
+          <LevelName z:Id="9">WARN</LevelName>
+          <LevelValue>60000</LevelValue>
+        </LevelFilter>
+        <LoggingFrameworkId z:Id="10">Log4net</LoggingFrameworkId>
+        <Name z:Id="11">SagaBNS.Auth</Name>
+        <ParserType>XML</ParserType>
+        <ReadAdjacentMessages>0</ReadAdjacentMessages>
+        <ReadFrom>2000-01-01T00:00:00</ReadFrom>
+        <ReadUntil>2018-06-06T00:00:00+02:00</ReadUntil>
+        <SourceId>0</SourceId>
+        <TimeOffset>0</TimeOffset>
+        <TimeZone i:nil="true" />
+        <UseFilter>false</UseFilter>
+        <Window>491</Window>
+        <f:ArchiveFilePattern z:Id="12">log.xml.*</f:ArchiveFilePattern>
+        <f:AutoReceiverSettings>false</f:AutoReceiverSettings>
+        <f:FileName z:Id="13">C:\Users\Master\source\repos\SagaBNS\SagaBNS.Auth\bin\Debug\log.xml</f:FileName>
+        <f:IgnoreReadErrors>false</f:IgnoreReadErrors>
+        <f:LogPattern z:Ref="3" i:nil="true" />
+        <f:ReadFromBeginning>true</f:ReadFromBeginning>
+        <f:ReadRolledFiles>true</f:ReadRolledFiles>
+      </ReceiverConfig>
+    </_receivers>
+    <_sources z:Id="14" z:Size="0" />
+  </Data>
+  <Presentation z:Id="15">
+    <Id>
+      <u:Value>3</u:Value>
+    </Id>
+    <DefaultLogLevel z:Id="16" i:type="LogLevelSurrogated">
+      <LevelName z:Id="17">ALL</LevelName>
+      <LevelValue>0</LevelValue>
+    </DefaultLogLevel>
+    <NotificationLogLevel z:Ref="8" i:nil="true" />
+    <NotifyMinimizedOnly>false</NotifyMinimizedOnly>
+    <PlaySoundLogLevel z:Ref="8" i:nil="true" />
+    <SaveOnExit>true</SaveOnExit>
+    <Version>24</Version>
+    <_charts z:Id="18" z:Size="0" />
+    <_columns z:Id="19" z:Size="208">
+      <ColumnConfig z:Id="20">
+        <Id>
+          <u:Value>245</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="21">Line</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="21" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="22">
+        <Id>
+          <u:Value>246</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="23">MDC</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="23" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="24">
+        <Id>
+          <u:Value>247</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="25">Level</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="25" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="26">
+        <Id>
+          <u:Value>248</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="27">LogLevel</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="27" i:nil="true" />
+        <Position>2</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="28">
+        <Id>
+          <u:Value>249</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="29">ThreadId</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="29" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="30">
+        <Id>
+          <u:Value>250</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="31">Class</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="31" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="32">
+        <Id>
+          <u:Value>251</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="33">Time</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="33" i:nil="true" />
+        <Position>4</Position>
+        <Width>100</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="34">
+        <Id>
+          <u:Value>252</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="35">OriginalTime</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="35" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="36">
+        <Id>
+          <u:Value>253</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="37">File</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="37" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="38">
+        <Id>
+          <u:Value>254</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="39">StackTrace</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="39" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="40">
+        <Id>
+          <u:Value>255</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="41">Host</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="41" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="42">
+        <Id>
+          <u:Value>256</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="43">UtcTime</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="43" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="44">
+        <Id>
+          <u:Value>257</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="45">Exception</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="45" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="46">
+        <Id>
+          <u:Value>258</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="47">Message</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="47" i:nil="true" />
+        <Position>6</Position>
+        <Width>1</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="48">
+        <Id>
+          <u:Value>259</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="49">Domain</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="49" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="50">
+        <Id>
+          <u:Value>260</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="51">NDC</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="51" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="52">
+        <Id>
+          <u:Value>261</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="53">LogSource</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="53" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="54">
+        <Id>
+          <u:Value>262</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="55">Date</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="55" i:nil="true" />
+        <Position>3</Position>
+        <Width>100</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="56">
+        <Id>
+          <u:Value>263</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="57">Source</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="57" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="58">
+        <Id>
+          <u:Value>264</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="59">Comment</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="59" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="60">
+        <Id>
+          <u:Value>265</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="61">Method</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="61" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="62">
+        <Id>
+          <u:Value>266</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="63">ProcessId</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="63" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="64">
+        <Id>
+          <u:Value>267</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="65">User</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="65" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="66">
+        <Id>
+          <u:Value>268</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="67">Thread</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="67" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="68">
+        <Id>
+          <u:Value>269</u:Value>
+        </Id>
+        <ClipMode>ClipLeft</ClipMode>
+        <FieldName z:Id="69">Logger</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="69" i:nil="true" />
+        <Position>5</Position>
+        <Width>1</Width>
+        <WindowId>112</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="70">
+        <Id>
+          <u:Value>270</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="21" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="21" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="71">
+        <Id>
+          <u:Value>271</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="23" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="23" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="72">
+        <Id>
+          <u:Value>272</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="25" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="25" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="73">
+        <Id>
+          <u:Value>273</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="27" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="27" i:nil="true" />
+        <Position>2</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="74">
+        <Id>
+          <u:Value>274</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="29" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="29" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="75">
+        <Id>
+          <u:Value>275</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="31" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="31" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="76">
+        <Id>
+          <u:Value>276</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="33" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="33" i:nil="true" />
+        <Position>4</Position>
+        <Width>100</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="77">
+        <Id>
+          <u:Value>277</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="35" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="35" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="78">
+        <Id>
+          <u:Value>278</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="37" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="37" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="79">
+        <Id>
+          <u:Value>279</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="39" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="39" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="80">
+        <Id>
+          <u:Value>280</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="41" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="41" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="81">
+        <Id>
+          <u:Value>281</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="43" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="43" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="82">
+        <Id>
+          <u:Value>282</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="45" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="45" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="83">
+        <Id>
+          <u:Value>283</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="47" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="47" i:nil="true" />
+        <Position>6</Position>
+        <Width>1</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="84">
+        <Id>
+          <u:Value>284</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="49" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="49" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="85">
+        <Id>
+          <u:Value>285</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="51" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="51" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="86">
+        <Id>
+          <u:Value>286</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="53" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="53" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="87">
+        <Id>
+          <u:Value>287</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="55" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="55" i:nil="true" />
+        <Position>3</Position>
+        <Width>100</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="88">
+        <Id>
+          <u:Value>288</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="57" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="57" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="89">
+        <Id>
+          <u:Value>289</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="59" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="59" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="90">
+        <Id>
+          <u:Value>290</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="61" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="61" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="91">
+        <Id>
+          <u:Value>291</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="63" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="63" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="92">
+        <Id>
+          <u:Value>292</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="65" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="65" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="93">
+        <Id>
+          <u:Value>293</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="67" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="67" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="94">
+        <Id>
+          <u:Value>294</u:Value>
+        </Id>
+        <ClipMode>ClipLeft</ClipMode>
+        <FieldName z:Ref="69" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="69" i:nil="true" />
+        <Position>5</Position>
+        <Width>1</Width>
+        <WindowId>82</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="95">
+        <Id>
+          <u:Value>295</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="21" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="21" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="96">
+        <Id>
+          <u:Value>296</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="23" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="23" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="97">
+        <Id>
+          <u:Value>297</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="25" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="25" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="98">
+        <Id>
+          <u:Value>298</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="27" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="27" i:nil="true" />
+        <Position>2</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="99">
+        <Id>
+          <u:Value>299</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="29" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="29" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="100">
+        <Id>
+          <u:Value>300</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="31" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="31" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="101">
+        <Id>
+          <u:Value>301</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="33" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="33" i:nil="true" />
+        <Position>4</Position>
+        <Width>100</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="102">
+        <Id>
+          <u:Value>302</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="35" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="35" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="103">
+        <Id>
+          <u:Value>303</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="37" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="37" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="104">
+        <Id>
+          <u:Value>304</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="39" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="39" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="105">
+        <Id>
+          <u:Value>305</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="41" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="41" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="106">
+        <Id>
+          <u:Value>306</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="43" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="43" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="107">
+        <Id>
+          <u:Value>307</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="45" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="45" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="108">
+        <Id>
+          <u:Value>308</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="47" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="47" i:nil="true" />
+        <Position>6</Position>
+        <Width>1</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="109">
+        <Id>
+          <u:Value>309</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="49" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="49" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="110">
+        <Id>
+          <u:Value>310</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="51" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="51" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="111">
+        <Id>
+          <u:Value>311</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="53" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="53" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="112">
+        <Id>
+          <u:Value>312</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="55" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="55" i:nil="true" />
+        <Position>3</Position>
+        <Width>100</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="113">
+        <Id>
+          <u:Value>313</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="57" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="57" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="114">
+        <Id>
+          <u:Value>314</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="59" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="59" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="115">
+        <Id>
+          <u:Value>315</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="61" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="61" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="116">
+        <Id>
+          <u:Value>316</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="63" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="63" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="117">
+        <Id>
+          <u:Value>317</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="65" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="65" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="118">
+        <Id>
+          <u:Value>318</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="67" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="67" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="119">
+        <Id>
+          <u:Value>319</u:Value>
+        </Id>
+        <ClipMode>ClipLeft</ClipMode>
+        <FieldName z:Ref="69" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="69" i:nil="true" />
+        <Position>5</Position>
+        <Width>1</Width>
+        <WindowId>52</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="120">
+        <Id>
+          <u:Value>320</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="21" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="21" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="121">
+        <Id>
+          <u:Value>321</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="23" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="23" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="122">
+        <Id>
+          <u:Value>322</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="25" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="25" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="123">
+        <Id>
+          <u:Value>323</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="27" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="27" i:nil="true" />
+        <Position>2</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="124">
+        <Id>
+          <u:Value>324</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="29" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="29" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="125">
+        <Id>
+          <u:Value>325</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="31" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="31" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="126">
+        <Id>
+          <u:Value>326</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="33" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="33" i:nil="true" />
+        <Position>4</Position>
+        <Width>100</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="127">
+        <Id>
+          <u:Value>327</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="35" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="35" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="128">
+        <Id>
+          <u:Value>328</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="37" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="37" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="129">
+        <Id>
+          <u:Value>329</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="39" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="39" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="130">
+        <Id>
+          <u:Value>330</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="41" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="41" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="131">
+        <Id>
+          <u:Value>331</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="43" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="43" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="132">
+        <Id>
+          <u:Value>332</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="45" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="45" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="133">
+        <Id>
+          <u:Value>333</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="47" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="47" i:nil="true" />
+        <Position>6</Position>
+        <Width>1</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="134">
+        <Id>
+          <u:Value>334</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="49" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="49" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="135">
+        <Id>
+          <u:Value>335</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="51" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="51" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="136">
+        <Id>
+          <u:Value>336</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="53" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="53" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="137">
+        <Id>
+          <u:Value>337</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="55" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="55" i:nil="true" />
+        <Position>3</Position>
+        <Width>100</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="138">
+        <Id>
+          <u:Value>338</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="57" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="57" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="139">
+        <Id>
+          <u:Value>339</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="59" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="59" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="140">
+        <Id>
+          <u:Value>340</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="61" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="61" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="141">
+        <Id>
+          <u:Value>341</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="63" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="63" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="142">
+        <Id>
+          <u:Value>342</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="65" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="65" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="143">
+        <Id>
+          <u:Value>343</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="67" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="67" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="144">
+        <Id>
+          <u:Value>344</u:Value>
+        </Id>
+        <ClipMode>ClipLeft</ClipMode>
+        <FieldName z:Ref="69" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="69" i:nil="true" />
+        <Position>5</Position>
+        <Width>1</Width>
+        <WindowId>19</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="145">
+        <Id>
+          <u:Value>375</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="146">Line</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="146" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="147">
+        <Id>
+          <u:Value>376</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="148">MDC</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="148" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="149">
+        <Id>
+          <u:Value>377</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="150">Level</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="150" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="151">
+        <Id>
+          <u:Value>378</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="152">LogLevel</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="152" i:nil="true" />
+        <Position>2</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="153">
+        <Id>
+          <u:Value>379</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="154">ThreadId</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="154" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="155">
+        <Id>
+          <u:Value>380</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="156">Class</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="156" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="157">
+        <Id>
+          <u:Value>381</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="158">Time</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="158" i:nil="true" />
+        <Position>4</Position>
+        <Width>100</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="159">
+        <Id>
+          <u:Value>382</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="160">OriginalTime</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="160" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="161">
+        <Id>
+          <u:Value>383</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="162">File</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="162" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="163">
+        <Id>
+          <u:Value>384</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="164">StackTrace</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="164" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="165">
+        <Id>
+          <u:Value>385</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="166">Host</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="166" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="167">
+        <Id>
+          <u:Value>386</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="168">UtcTime</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="168" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="169">
+        <Id>
+          <u:Value>387</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="170">Exception</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="170" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="171">
+        <Id>
+          <u:Value>388</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="172">Message</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="172" i:nil="true" />
+        <Position>6</Position>
+        <Width>1</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="173">
+        <Id>
+          <u:Value>389</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="174">Domain</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="174" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="175">
+        <Id>
+          <u:Value>390</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="176">NDC</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="176" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="177">
+        <Id>
+          <u:Value>391</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="178">LogSource</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="178" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="179">
+        <Id>
+          <u:Value>392</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="180">Date</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="180" i:nil="true" />
+        <Position>3</Position>
+        <Width>100</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="181">
+        <Id>
+          <u:Value>393</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="182">Source</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="182" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="183">
+        <Id>
+          <u:Value>394</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="184">Comment</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="184" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="185">
+        <Id>
+          <u:Value>395</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="186">Method</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="186" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="187">
+        <Id>
+          <u:Value>396</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="188">ProcessId</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="188" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="189">
+        <Id>
+          <u:Value>397</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="190">User</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="190" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="191">
+        <Id>
+          <u:Value>398</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="192">Thread</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="192" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="193">
+        <Id>
+          <u:Value>399</u:Value>
+        </Id>
+        <ClipMode>ClipLeft</ClipMode>
+        <FieldName z:Id="194">Logger</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="194" i:nil="true" />
+        <Position>5</Position>
+        <Width>1</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="195">
+        <Id>
+          <u:Value>400</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="196">log4net:UserName</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="196" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="197">
+        <Id>
+          <u:Value>401</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="198">log4net:Identity</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="198" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>347</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="199">
+        <Id>
+          <u:Value>462</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="200">Line</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="200" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="201">
+        <Id>
+          <u:Value>463</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="202">MDC</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="202" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="203">
+        <Id>
+          <u:Value>464</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="204">Level</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="204" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="205">
+        <Id>
+          <u:Value>465</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="206">LogLevel</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="206" i:nil="true" />
+        <Position>2</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="207">
+        <Id>
+          <u:Value>466</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="208">ThreadId</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="208" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="209">
+        <Id>
+          <u:Value>467</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="210">Class</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="210" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="211">
+        <Id>
+          <u:Value>468</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="212">Time</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="212" i:nil="true" />
+        <Position>4</Position>
+        <Width>100</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="213">
+        <Id>
+          <u:Value>469</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="214">OriginalTime</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="214" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="215">
+        <Id>
+          <u:Value>470</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="216">File</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="216" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="217">
+        <Id>
+          <u:Value>471</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="218">StackTrace</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="218" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="219">
+        <Id>
+          <u:Value>472</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="220">Host</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="220" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="221">
+        <Id>
+          <u:Value>473</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="222">UtcTime</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="222" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="223">
+        <Id>
+          <u:Value>474</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="224">Exception</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="224" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="225">
+        <Id>
+          <u:Value>475</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="226">Message</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="226" i:nil="true" />
+        <Position>6</Position>
+        <Width>1</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="227">
+        <Id>
+          <u:Value>476</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="228">Domain</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="228" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="229">
+        <Id>
+          <u:Value>477</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="230">NDC</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="230" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="231">
+        <Id>
+          <u:Value>478</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="232">LogSource</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="232" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="233">
+        <Id>
+          <u:Value>479</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="234">Date</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="234" i:nil="true" />
+        <Position>3</Position>
+        <Width>100</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="235">
+        <Id>
+          <u:Value>480</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="236">Source</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="236" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="237">
+        <Id>
+          <u:Value>481</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="238">Comment</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="238" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="239">
+        <Id>
+          <u:Value>482</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="240">Method</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="240" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="241">
+        <Id>
+          <u:Value>483</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="242">ProcessId</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="242" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="243">
+        <Id>
+          <u:Value>484</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="244">User</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="244" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="245">
+        <Id>
+          <u:Value>485</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="246">Thread</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="246" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="247">
+        <Id>
+          <u:Value>486</u:Value>
+        </Id>
+        <ClipMode>ClipLeft</ClipMode>
+        <FieldName z:Id="248">Logger</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="248" i:nil="true" />
+        <Position>5</Position>
+        <Width>1</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="249">
+        <Id>
+          <u:Value>487</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="250">log4net:UserName</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="250" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="251">
+        <Id>
+          <u:Value>488</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="252">log4net:Identity</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="252" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>404</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="253">
+        <Id>
+          <u:Value>492</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="254">Line</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="254" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="255">
+        <Id>
+          <u:Value>493</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="256">MDC</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="256" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="257">
+        <Id>
+          <u:Value>494</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="258">Level</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="258" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="259">
+        <Id>
+          <u:Value>495</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="260">LogLevel</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="260" i:nil="true" />
+        <Position>2</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="261">
+        <Id>
+          <u:Value>496</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="262">ThreadId</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="262" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="263">
+        <Id>
+          <u:Value>497</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="264">Class</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="264" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="265">
+        <Id>
+          <u:Value>498</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="266">Time</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="266" i:nil="true" />
+        <Position>4</Position>
+        <Width>100</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="267">
+        <Id>
+          <u:Value>499</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="268">OriginalTime</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="268" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="269">
+        <Id>
+          <u:Value>500</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="270">File</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="270" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="271">
+        <Id>
+          <u:Value>501</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="272">StackTrace</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="272" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="273">
+        <Id>
+          <u:Value>502</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="274">Host</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="274" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="275">
+        <Id>
+          <u:Value>503</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="276">UtcTime</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="276" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="277">
+        <Id>
+          <u:Value>504</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="278">Exception</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="278" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="279">
+        <Id>
+          <u:Value>505</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="280">Message</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="280" i:nil="true" />
+        <Position>6</Position>
+        <Width>1</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="281">
+        <Id>
+          <u:Value>506</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="282">Domain</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="282" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="283">
+        <Id>
+          <u:Value>507</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="284">NDC</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="284" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="285">
+        <Id>
+          <u:Value>508</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="286">LogSource</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="286" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="287">
+        <Id>
+          <u:Value>509</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="288">Date</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="288" i:nil="true" />
+        <Position>3</Position>
+        <Width>100</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="289">
+        <Id>
+          <u:Value>510</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="290">Source</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="290" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="291">
+        <Id>
+          <u:Value>511</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="292">log4net:Identity</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="292" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="293">
+        <Id>
+          <u:Value>512</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="294">Comment</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="294" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="295">
+        <Id>
+          <u:Value>513</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="296">Method</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="296" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="297">
+        <Id>
+          <u:Value>514</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="298">ProcessId</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="298" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="299">
+        <Id>
+          <u:Value>515</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="300">log4net:UserName</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="300" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="301">
+        <Id>
+          <u:Value>516</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="302">User</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="302" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="303">
+        <Id>
+          <u:Value>517</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Id="304">Thread</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="304" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="305">
+        <Id>
+          <u:Value>518</u:Value>
+        </Id>
+        <ClipMode>ClipLeft</ClipMode>
+        <FieldName z:Id="306">Logger</FieldName>
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="306" i:nil="true" />
+        <Position>5</Position>
+        <Width>1</Width>
+        <WindowId>491</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="307">
+        <Id>
+          <u:Value>519</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="254" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="254" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="308">
+        <Id>
+          <u:Value>520</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="256" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="256" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="309">
+        <Id>
+          <u:Value>521</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="258" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="258" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="310">
+        <Id>
+          <u:Value>522</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="260" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="260" i:nil="true" />
+        <Position>2</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="311">
+        <Id>
+          <u:Value>523</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="262" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="262" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="312">
+        <Id>
+          <u:Value>524</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="264" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="264" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="313">
+        <Id>
+          <u:Value>525</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="266" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="266" i:nil="true" />
+        <Position>4</Position>
+        <Width>100</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="314">
+        <Id>
+          <u:Value>526</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="268" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="268" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="315">
+        <Id>
+          <u:Value>527</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="270" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="270" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="316">
+        <Id>
+          <u:Value>528</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="272" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="272" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="317">
+        <Id>
+          <u:Value>529</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="274" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="274" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="318">
+        <Id>
+          <u:Value>530</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="276" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="276" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="319">
+        <Id>
+          <u:Value>531</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="278" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="278" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="320">
+        <Id>
+          <u:Value>532</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="280" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="280" i:nil="true" />
+        <Position>6</Position>
+        <Width>1</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="321">
+        <Id>
+          <u:Value>533</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="282" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="282" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="322">
+        <Id>
+          <u:Value>534</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="284" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="284" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="323">
+        <Id>
+          <u:Value>535</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="286" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="286" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="324">
+        <Id>
+          <u:Value>536</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="288" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="288" i:nil="true" />
+        <Position>3</Position>
+        <Width>100</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="325">
+        <Id>
+          <u:Value>537</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="290" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="290" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="326">
+        <Id>
+          <u:Value>538</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="294" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="294" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="327">
+        <Id>
+          <u:Value>539</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="296" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="296" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="328">
+        <Id>
+          <u:Value>540</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="298" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="298" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="329">
+        <Id>
+          <u:Value>541</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="302" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="302" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="330">
+        <Id>
+          <u:Value>542</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="304" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="304" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="331">
+        <Id>
+          <u:Value>543</u:Value>
+        </Id>
+        <ClipMode>ClipLeft</ClipMode>
+        <FieldName z:Ref="306" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>true</IsStar>
+        <Name z:Ref="306" i:nil="true" />
+        <Position>5</Position>
+        <Width>1</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="332">
+        <Id>
+          <u:Value>544</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="300" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="300" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+      <ColumnConfig z:Id="333">
+        <Id>
+          <u:Value>545</u:Value>
+        </Id>
+        <ClipMode>ClipRight</ClipMode>
+        <FieldName z:Ref="292" i:nil="true" />
+        <FixedStyle>None</FixedStyle>
+        <IsStar>false</IsStar>
+        <Name z:Ref="292" i:nil="true" />
+        <Position>-1</Position>
+        <Width>80</Width>
+        <WindowId>434</WindowId>
+      </ColumnConfig>
+    </_columns>
+    <_filters z:Id="334" z:Size="0" />
+    <_formats z:Id="335" z:Size="13">
+      <LoggerFormatConfig z:Id="336">
+        <Id>
+          <u:Value>4</u:Value>
+        </Id>
+        <Active>true</Active>
+        <BackcolorString z:Id="337">#00FFFFFF</BackcolorString>
+        <Condition z:Id="338">[Level] &gt;= 0</Condition>
+        <Description i:nil="true" />
+        <FontName z:Id="339">Segoe UI</FontName>
+        <FontSize>12</FontSize>
+        <ForecolorString z:Id="340">#FFC8C8C8</ForecolorString>
+        <Italic>false</Italic>
+        <OpenTypeWeight>400</OpenTypeWeight>
+        <Underline>false</Underline>
+      </LoggerFormatConfig>
+      <LoggerFormatConfig z:Id="341">
+        <Id>
+          <u:Value>5</u:Value>
+        </Id>
+        <Active>true</Active>
+        <BackcolorString z:Id="342">#00FFFFFF</BackcolorString>
+        <Condition z:Id="343">[Level] &gt;= 10000</Condition>
+        <Description i:nil="true" />
+        <FontName z:Ref="339" i:nil="true" />
+        <FontSize>12</FontSize>
+        <ForecolorString z:Id="344">#FFB4B4B4</ForecolorString>
+        <Italic>false</Italic>
+        <OpenTypeWeight>400</OpenTypeWeight>
+        <Underline>false</Underline>
+      </LoggerFormatConfig>
+      <LoggerFormatConfig z:Id="345">
+        <Id>
+          <u:Value>6</u:Value>
+        </Id>
+        <Active>true</Active>
+        <BackcolorString z:Id="346">#00FFFFFF</BackcolorString>
+        <Condition z:Id="347">[Level] &gt;= 20000</Condition>
+        <Description i:nil="true" />
+        <FontName z:Ref="339" i:nil="true" />
+        <FontSize>12</FontSize>
+        <ForecolorString z:Id="348">#FFA0A0A0</ForecolorString>
+        <Italic>false</Italic>
+        <OpenTypeWeight>400</OpenTypeWeight>
+        <Underline>false</Underline>
+      </LoggerFormatConfig>
+      <LoggerFormatConfig z:Id="349">
+        <Id>
+          <u:Value>7</u:Value>
+        </Id>
+        <Active>true</Active>
+        <BackcolorString z:Id="350">#00FFFFFF</BackcolorString>
+        <Condition z:Id="351">[Level] &gt;= 30000</Condition>
+        <Description i:nil="true" />
+        <FontName z:Ref="339" i:nil="true" />
+        <FontSize>12</FontSize>
+        <ForecolorString z:Id="352">#FF828282</ForecolorString>
+        <Italic>false</Italic>
+        <OpenTypeWeight>400</OpenTypeWeight>
+        <Underline>false</Underline>
+      </LoggerFormatConfig>
+      <LoggerFormatConfig z:Id="353">
+        <Id>
+          <u:Value>8</u:Value>
+        </Id>
+        <Active>true</Active>
+        <BackcolorString z:Id="354">#00FFFFFF</BackcolorString>
+        <Condition z:Id="355">[Level] &gt;= 40000</Condition>
+        <Description i:nil="true" />
+        <FontName z:Ref="339" i:nil="true" />
+        <FontSize>12</FontSize>
+        <ForecolorString z:Id="356">#FF000000</ForecolorString>
+        <Italic>false</Italic>
+        <OpenTypeWeight>400</OpenTypeWeight>
+        <Underline>false</Underline>
+      </LoggerFormatConfig>
+      <LoggerFormatConfig z:Id="357">
+        <Id>
+          <u:Value>9</u:Value>
+        </Id>
+        <Active>true</Active>
+        <BackcolorString z:Id="358">#00FFFFFF</BackcolorString>
+        <Condition z:Id="359">[Level] &gt;= 50000</Condition>
+        <Description i:nil="true" />
+        <FontName z:Ref="339" i:nil="true" />
+        <FontSize>12</FontSize>
+        <ForecolorString z:Id="360">#FF397B39</ForecolorString>
+        <Italic>false</Italic>
+        <OpenTypeWeight>400</OpenTypeWeight>
+        <Underline>false</Underline>
+      </LoggerFormatConfig>
+      <LoggerFormatConfig z:Id="361">
+        <Id>
+          <u:Value>10</u:Value>
+        </Id>
+        <Active>true</Active>
+        <BackcolorString z:Id="362">#00FFFFFF</BackcolorString>
+        <Condition z:Id="363">[Level] &gt;= 60000</Condition>
+        <Description i:nil="true" />
+        <FontName z:Ref="339" i:nil="true" />
+        <FontSize>12</FontSize>
+        <ForecolorString z:Id="364">#FFFF7F00</ForecolorString>
+        <Italic>false</Italic>
+        <OpenTypeWeight>400</OpenTypeWeight>
+        <Underline>false</Underline>
+      </LoggerFormatConfig>
+      <LoggerFormatConfig z:Id="365">
+        <Id>
+          <u:Value>11</u:Value>
+        </Id>
+        <Active>true</Active>
+        <BackcolorString z:Id="366">#00FFFFFF</BackcolorString>
+        <Condition z:Id="367">[Level] &gt;= 70000</Condition>
+        <Description i:nil="true" />
+        <FontName z:Ref="339" i:nil="true" />
+        <FontSize>12</FontSize>
+        <ForecolorString z:Id="368">#FFFF0000</ForecolorString>
+        <Italic>false</Italic>
+        <OpenTypeWeight>400</OpenTypeWeight>
+        <Underline>false</Underline>
+      </LoggerFormatConfig>
+      <LoggerFormatConfig z:Id="369">
+        <Id>
+          <u:Value>12</u:Value>
+        </Id>
+        <Active>true</Active>
+        <BackcolorString z:Id="370">#00FFFFFF</BackcolorString>
+        <Condition z:Id="371">[Level] &gt;= 80000</Condition>
+        <Description i:nil="true" />
+        <FontName z:Ref="339" i:nil="true" />
+        <FontSize>12</FontSize>
+        <ForecolorString z:Id="372">#FFE3021F</ForecolorString>
+        <Italic>false</Italic>
+        <OpenTypeWeight>400</OpenTypeWeight>
+        <Underline>false</Underline>
+      </LoggerFormatConfig>
+      <LoggerFormatConfig z:Id="373">
+        <Id>
+          <u:Value>13</u:Value>
+        </Id>
+        <Active>true</Active>
+        <BackcolorString z:Id="374">#00FFFFFF</BackcolorString>
+        <Condition z:Id="375">[Level] &gt;= 90000</Condition>
+        <Description i:nil="true" />
+        <FontName z:Ref="339" i:nil="true" />
+        <FontSize>12</FontSize>
+        <ForecolorString z:Id="376">#FFAB0E39</ForecolorString>
+        <Italic>false</Italic>
+        <OpenTypeWeight>400</OpenTypeWeight>
+        <Underline>false</Underline>
+      </LoggerFormatConfig>
+      <LoggerFormatConfig z:Id="377">
+        <Id>
+          <u:Value>14</u:Value>
+        </Id>
+        <Active>true</Active>
+        <BackcolorString z:Id="378">#00FFFFFF</BackcolorString>
+        <Condition z:Id="379">[Level] &gt;= 100000</Condition>
+        <Description i:nil="true" />
+        <FontName z:Ref="339" i:nil="true" />
+        <FontSize>12</FontSize>
+        <ForecolorString z:Id="380">#FFFF00FF</ForecolorString>
+        <Italic>false</Italic>
+        <OpenTypeWeight>400</OpenTypeWeight>
+        <Underline>false</Underline>
+      </LoggerFormatConfig>
+      <LoggerFormatConfig z:Id="381">
+        <Id>
+          <u:Value>15</u:Value>
+        </Id>
+        <Active>true</Active>
+        <BackcolorString z:Id="382">#00FFFFFF</BackcolorString>
+        <Condition z:Id="383">[Level] &gt;= 110000</Condition>
+        <Description i:nil="true" />
+        <FontName z:Ref="339" i:nil="true" />
+        <FontSize>12</FontSize>
+        <ForecolorString z:Id="384">#FF8B2899</ForecolorString>
+        <Italic>false</Italic>
+        <OpenTypeWeight>400</OpenTypeWeight>
+        <Underline>false</Underline>
+      </LoggerFormatConfig>
+      <LoggerFormatConfig z:Id="385">
+        <Id>
+          <u:Value>16</u:Value>
+        </Id>
+        <Active>true</Active>
+        <BackcolorString z:Id="386">#00FFFFFF</BackcolorString>
+        <Condition z:Id="387">[Level] &gt;= 120000</Condition>
+        <Description i:nil="true" />
+        <FontName z:Ref="339" i:nil="true" />
+        <FontSize>12</FontSize>
+        <ForecolorString z:Id="388">#FF76237D</ForecolorString>
+        <Italic>false</Italic>
+        <OpenTypeWeight>400</OpenTypeWeight>
+        <Underline>false</Underline>
+      </LoggerFormatConfig>
+    </_formats>
+    <_logLevels z:Id="389" z:Size="0" />
+    <_loggers z:Id="390" z:Size="0" />
+  </Presentation>
+  <Version>24</Version>
+</Config>
