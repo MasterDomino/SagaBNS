@@ -43,9 +43,9 @@ namespace SagaBNS.Handler.AuthPackets
             {
                 writer.AutoFlush = true;
                 writer.Write("<Reply>");
-                writer.Write("<AuthToken>");
+                writer.Write("<AuthnToken>");
                 writer.Write(key);
-                writer.Write("</AuthToken>");
+                writer.Write("</AuthnToken>");
                 writer.Write("</Reply>");
                 writer.Flush();
 

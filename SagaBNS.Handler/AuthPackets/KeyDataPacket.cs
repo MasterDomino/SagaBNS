@@ -58,7 +58,7 @@ namespace SagaBNS.Handler.AuthPackets
 
                 try
                 {
-                    session.Srp.ReceiveClientProof(clientKeyDataReader, serverKeyDataWriter, out key);
+                    session.SRP.ReceiveClientProof(clientKeyDataReader, serverKeyDataWriter, out key);
                 }
                 catch (SRP6InvalidStateException ex)
                 {
@@ -80,7 +80,7 @@ namespace SagaBNS.Handler.AuthPackets
                 finally
                 {
                     // Let GC take the mem back.
-                    session.Srp = null;
+                    session.SRP = null;
                 }
 
                 //AuthKeyDataReply reply = new AuthKeyDataReply

@@ -65,10 +65,13 @@ namespace SagaBNS.Core.Cryptography
             {
                 _i = (_i + 1) & 0xFF;
                 _j = (_j + _s[_i]) & 0xFF;
+
+                //swap
                 byte swap = _s[_i];
                 _s[_i] = _s[_j];
                 _s[_j] = swap;
 
+                // xor
                 output[index] = (byte)((input[index]) ^ _s[(_s[_j] + _s[_i]) & 0xFF]);
 
                 // i put index++ here instead and we dont have to do -1
@@ -87,10 +90,13 @@ namespace SagaBNS.Core.Cryptography
 
                 _i = (_i + 1) & 0xFF;
                 _j = (_j + _s[_i]) & 0xFF;
+
+                // swap
                 byte swap = _s[_i];
                 _s[_i] = _s[_j];
                 _s[_j] = swap;
 
+                // xor
                 buffer[bufferIndex] = (byte)((buffer[bufferIndex]) ^ _s[(_s[_j] + _s[_i]) & 0xFF]);
             }
         }

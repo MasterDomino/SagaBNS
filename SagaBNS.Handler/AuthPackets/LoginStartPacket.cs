@@ -69,8 +69,8 @@ namespace SagaBNS.Handler.AuthPackets
             {
                 try
                 {
-                    session.Srp = new SRP6();
-                    session.Srp.ReceiveLoginStartInfo(LoginName, session.Account.Password, keyDataWriter);
+                    session.SRP = new SRP6();
+                    session.SRP.ReceiveLoginStartInfo(LoginName, session.Account.Password, keyDataWriter);
                 }
                 catch (SRP6InvalidStateException ex)
                 {

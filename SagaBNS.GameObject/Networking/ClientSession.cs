@@ -38,6 +38,7 @@ namespace SagaBNS.GameObject.Networking
         // this should be a game object
         public AccountDTO Account { get; set; }
 
+        // this should be internal id not connected to socket in any matter
         public int ClientId { get; private set; }
 
         public RC4 CryptIn { get; set; }
@@ -59,7 +60,7 @@ namespace SagaBNS.GameObject.Networking
 
         public SessionState SessionState { get; set; }
 
-        public SRP6 Srp { get; set; }
+        public SRP6 SRP { get; set; }
 
         #endregion
 
@@ -71,29 +72,17 @@ namespace SagaBNS.GameObject.Networking
             _manager.DeleteSession(SessionId);
         }
 
-        public static string Bytes2HexString(byte[] b)
-        {
-            string tmp = "";
-            int i;
-            for (i = 0; i < b.Length; i++)
-            {
-                string tmp2 = b[i].ToString("X2");
-                tmp += tmp2;
-            }
-            return tmp;
-        }
-
         public void HandlePacket(MemoryStream packet)
         {
             CryptIn?.EncryptBuffer(packet.GetBuffer(), 0, packet.Length);
 
             // temporary logging
-            if (Ready)
-            {
-                byte[] buf = packet.GetBuffer();
-                string handshake = Encoding.UTF8.GetString(buf);
-                Logger.Debug(handshake);
-            }
+            //if (Ready)
+            //{
+            //    byte[] buf = packet.GetBuffer();
+            //    string handshake = Encoding.UTF8.GetString(buf);
+            //    Logger.Debug(handshake);
+            //}
 
             /* The protocol is basically HTTP and respects the rules of HTTP/1.1
              * I'm trying to make this as simple as possible and the code is trying to detect errors.
@@ -109,14 +98,16 @@ namespace SagaBNS.GameObject.Networking
                         string[] requestLine = reader.ReadLine().Split(' ');
                         if (requestLine.Length == 3)
                         {
-                            // we will somehow need to decrypt the header for game and lobby
+                            // we will somehow need to decrypt the header for game and lobby,
+                            // unless what i noticed is true that packets seem to get corrupted, or are held in a stream
+                            // that corrupts itself when next packets get added to it soo we shouldnt be really bothered by it.
                             string method = requestLine[0];
 
                             if (method == "POST")
                             {
                                 string command = requestLine[1];
                                 string type = requestLine[2];
-                                Logger.Debug($"Recieve: {method} {command} {type}");
+                                string log = $"Recieve: {method} {command} {type}";
 
                                 // get headers, there may be more.
                                 int l = 0;
@@ -127,7 +118,8 @@ namespace SagaBNS.GameObject.Networking
                                 {
                                     string[] header = line.Split(new char[] { ':' }, 2);
 
-                                    Logger.Debug(header[0] + ":" + header[1]);
+                                    // we can log additional data about lines and status of packet
+                                    //log += "\n" + header[0] + ":" + header[1];
 
                                     switch (header[0])
                                     {
@@ -149,6 +141,8 @@ namespace SagaBNS.GameObject.Networking
 
                                     line = reader.ReadLine();
                                 }
+
+                                Logger.Debug(log);
 
                                 LastRequestId = s;
 
@@ -311,13 +305,13 @@ namespace SagaBNS.GameObject.Networking
 
         private void DispatchCommand(string command, StreamReader reader)
         {
+            // debug logs
             //Logger.Debug($"Dispatching '{command}'");
-            //long pos = reader.BaseStream.Position;
             string content = reader.ReadToEnd();
-            if (!string.IsNullOrWhiteSpace(content))
-            {
-                Logger.Debug("Content: " + content);
-            }
+            //if (!string.IsNullOrWhiteSpace(content))
+            //{
+            //    Logger.Debug("Content: " + content);
+            //}
             reader.DiscardBufferedData();
             reader.BaseStream.Seek(0, SeekOrigin.Begin);
             string[] commandSplit = command.Split('/');
@@ -332,7 +326,7 @@ namespace SagaBNS.GameObject.Networking
                 {
                     Logger.Error("Handler Error", ex);
 
-                    // TODO: KICK THE CLIENT
+                    // TODO: KICK THE CLIENT, or tell it that there was error handling packets
                 }
             }
             else
